@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.0'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -43,3 +45,18 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development, :test do 
+  # Test with rspec
+	gem 'rspec-rails'
+	
+	# Policy my ruby
+	gem 'rubocop'
+
+	# Guardfile
+	gem 'guard'
+	gem 'guard-livereload'
+	gem 'guard-rspec'
+
+end
+
+gem 'dotenv-rails'
