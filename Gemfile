@@ -50,6 +50,9 @@ group :development, :test do
 end
 
 group :development, :test do
+  # Cover my tests
+  gem 'simplecov', :require => false, :group => :test
+
   # Gem pry for debug
   gem 'pry'
   # Test with rspec
