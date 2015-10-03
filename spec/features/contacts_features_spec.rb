@@ -33,6 +33,23 @@ describe "Test expect good list from excel file" do
   end
 end
 
+describe "Test expect a list with no repeated contacts" do
+
+  feature "Test we should see a list unique contacts"
+  scenario "Should see a list of unique contacts" do
+    visit '/'
+    attach_file("contacts", "#{Rails.root + 'contacter.xlsx'}")
+		click_button("Envoi")
+		expect(page).to have_text("Paul")
+		expect(page).to have_text("Durant")
+		expect(page).to have_text("p.durant@gmail.com")
+		expect(page).to have_text("Mori")
+		expect(page).to have_text("Keita")
+
+  end
+end
+
+
 describe "Test expect to show unindentified contacts from excel file" do
 
   feature "Test we should see a list of bad contacts too"
