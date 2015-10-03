@@ -71,7 +71,7 @@ class ContactsController < ApplicationController
   private
 
   def contacts_params
-    params.permit(:good, :bad)
+    params.permit(:good, :bad, :contacts)
   end
 
 end
