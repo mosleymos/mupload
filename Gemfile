@@ -52,6 +52,9 @@ group :development, :test do
   # Policy my ruby
   gem 'rubocop'
 
+  # Capybara
+	gem 'capybara'
+
   # Guardfile
   gem 'guard'
   gem 'guard-livereload'
