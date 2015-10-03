@@ -1,9 +1,30 @@
 <h1>Liste des contacts</h1>
 
-<% if flash[:import_csv] %>
+<%= params.inspect %>
+
+<% if flash[:good] %>
 <ul>
-  <% flash[:import_csv].each do |i| %>
-    <li><%= i %></li>
+  <% flash[:good].each do |g| %>
+					<li>
+					<h3><%= g['firstname'] %></h3>
+					<h5><%= g['lastname'] %></h5>
+					<h5><%= g['email'] %></h5>
+					</li>
   <% end %>
-<% end %>
 </ul>
+<% end %>
+
+<h1>Contacts non identifiés</h1>
+
+<% if flash[:bad] %>
+<ul>
+  <% flash[:bad].each do |b| %>
+					<li>
+					<h3><%= b['firstname'] %></h3>
+					<h5><%= b['lastname'] %></h5>
+					<h5><%= b['email'] %></h5>
+					</li>
+  <% end %>
+</ul>
+<% end %>
+
