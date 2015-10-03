@@ -49,6 +49,9 @@ group :development, :test do
   gem 'spring'
 end
 
+# Cover my prog
+gem 'coveralls', require: false
+
 group :development, :test do
   # Cover my tests
   gem 'simplecov', :require => false, :group => :test

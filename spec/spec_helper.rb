@@ -16,8 +16,10 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'coveralls'
 require 'capybara/rspec'
 require 'simplecov'
+Coveralls.wear!
 SimpleCov.start
 
 RSpec.configure do |config|
