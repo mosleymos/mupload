@@ -3,7 +3,11 @@
 <% if flash[:import_csv] %>
 <ul>
   <% flash[:import_csv].each do |i| %>
-    <li><%= i %></li>
+					<li>
+					  <h3>First name: <%= i[0] %></h3>
+					  <h5>Last name: <%= i[1] %></h5>
+					  <h5>Email: <%= i[2] %></h5>
+					</li>
   <% end %>
 <% end %>
 </ul>
