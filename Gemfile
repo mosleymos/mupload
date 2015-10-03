@@ -50,6 +50,8 @@ group :development, :test do
 end
 
 group :development, :test do
+  # Gem pry for debug
+  gem 'pry'
   # Test with rspec
   gem 'rspec-rails'
 	
@@ -66,5 +68,8 @@ group :development, :test do
   gem 'guard-rubocop'
 
 end
+
+# In order to manipulate csv
+gem 'roo'
 
 gem 'dotenv-rails'
