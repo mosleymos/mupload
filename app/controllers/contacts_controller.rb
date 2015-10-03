@@ -1,5 +1,3 @@
-require 'pry'
-require 'roo'
 class ContactsController < ApplicationController
   def index
   end
