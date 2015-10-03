@@ -1,1 +1,9 @@
 <h1>Liste des contacts</h1>
+
+<% if flash[:import_csv] %>
+<ul>
+  <% flash[:import_csv].each do |i| %>
+    <li><%= i %></li>
+  <% end %>
+<% end %>
+</ul>
