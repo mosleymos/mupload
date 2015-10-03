@@ -45,17 +45,18 @@ group :development, :test do
   gem 'spring'
 end
 
-group :development, :test do 
+group :development, :test do
   # Test with rspec
-	gem 'rspec-rails'
+  gem 'rspec-rails'
 	
-	# Policy my ruby
-	gem 'rubocop'
+  # Policy my ruby
+  gem 'rubocop'
 
-	# Guardfile
-	gem 'guard'
-	gem 'guard-livereload'
-	gem 'guard-rspec'
+  # Guardfile
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-rspec'
+  gem 'guard-rubocop'
 
 end
 
