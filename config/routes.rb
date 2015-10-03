@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'contacts#index'
+	get 'upload' => 'contacts#upload'
 	post 'upload' => 'contacts#upload'
 	get 'contacts/list' => 'contacts#list'
   # The priority is based upon order of creation: first created -> highest priority.
