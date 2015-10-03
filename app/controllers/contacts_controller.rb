@@ -45,6 +45,7 @@ class ContactsController < ApplicationController
   end
 
   def upload
+
     uploaded = params[:contacts]
     @import, @good, @bad = [], [], []
     xlsx = Roo::Spreadsheet.open(uploaded.original_filename)
@@ -53,6 +54,8 @@ class ContactsController < ApplicationController
          @import.push(Contact.new(xlsx.sheet(name).row(r)[0], xlsx.sheet(name).row(r)[1], xlsx.sheet(name).row(r)[2])
 )			end
     end
+
+		@import = @import.uniq{|e| [e.firstname, e.lastname, e.email] }
 		@bad = @import.map{|e| e}.select{|f| f.correct_contact.contact_valid? == false }
 		@good = @import.map{|e| e}.select{|f| f.correct_contact.contact_valid? == true }
 
