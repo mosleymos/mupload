@@ -8,6 +8,9 @@ MUPLOAD
 
 [![Code Climate](https://codeclimate.com/github/mosleymos/mupload/badges/gpa.svg)](https://codeclimate.com/github/mosleymos/mupload)
 
+[![Dependency Status](https://gemnasium.com/mosleymos/mupload.svg)](https://gemnasium.com/mosleymos/mupload)
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
