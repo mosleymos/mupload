@@ -8,9 +8,7 @@ describe 'Test expect a homepage with about content' do
     expect(page).to have_button('Envoi')
   end
 end
-
 describe 'Test expect send a excel file' do
-
   feature 'Test we should see a list of contacts'
   scenario 'Should see a list of contacts' do
     visit '/'
@@ -19,9 +17,7 @@ describe 'Test expect send a excel file' do
     expect(page).to have_text('Liste des contacts')
   end
 end
-
 describe 'Test expect good list from excel file' do
-
   feature 'Test we should see a list of good contacts'
   scenario 'Should see a list of clean contacts' do
     visit '/'
@@ -32,9 +28,7 @@ describe 'Test expect good list from excel file' do
     expect(page).to have_text('p.durant@gmail.com')
   end
 end
-
 describe 'Test expect a list with no repeated contacts' do
-
   feature 'Test we should see a list unique contacts'
   scenario 'Should see a list of unique contacts' do
     visit '/'
@@ -48,10 +42,7 @@ describe 'Test expect a list with no repeated contacts' do
 
   end
 end
-
-
 describe 'Test expect to show unindentified contacts from excel file' do
-
   feature 'Test we should see a list of bad contacts too'
   scenario 'Should see a list of bad contacts' do
     visit '/'

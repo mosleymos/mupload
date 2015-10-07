@@ -43,9 +43,9 @@ class ContactsController < ApplicationController
       end
     end
 
-    @import = @import.uniq{|e| [e.firstname, e.lastname, e.email] }
-    @bad = @import.map{|e| e}.select{|f| f.correct_contact.contact_valid? == false }
-    @good = @import.map{|e| e}.select{|f| f.correct_contact.contact_valid? == true }
+    @import = @import.uniq { |e| [e.firstname, e.lastname, e.email] }
+    @bad = @import.map { |e| e }.select { |f| f.correct_contact.contact_valid? == false }
+    @good = @import.map { |e| e }.select { |f| f.correct_contact.contact_valid? == true }
     
     flash[:bad] = @bad
     flash[:good] = @good 
