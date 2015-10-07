@@ -65,7 +65,7 @@ group :development, :test do
   gem 'rubocop'
 
   # Capybara
-	gem 'capybara'
+  gem 'capybara'
 
   # Guardfile
   gem 'guard'
