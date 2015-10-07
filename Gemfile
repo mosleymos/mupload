@@ -78,4 +78,8 @@ end
 # In order to manipulate csv
 gem 'roo'
 
+# Environnement variable
 gem 'dotenv-rails'
+
+# Brakeman for security
+gem 'brakeman'

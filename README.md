@@ -6,6 +6,8 @@ MUPLOAD
 
 [![Coverage Status](https://coveralls.io/repos/mosleymos/mupload/badge.svg?branch=master&service=github)](https://coveralls.io/github/mosleymos/mupload?branch=master)
 
+[![Code Climate](https://codeclimate.com/github/mosleymos/mupload/badges/gpa.svg)](https://codeclimate.com/github/mosleymos/mupload)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
