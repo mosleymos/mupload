@@ -34,6 +34,7 @@ class ContactsController < ApplicationController
 
   def upload
 
+		begin
     uploaded = params[:contacts]
     @import, @good, @bad = [], [], []
     xlsx = Roo::Spreadsheet.open(uploaded.original_filename)
@@ -50,6 +51,10 @@ class ContactsController < ApplicationController
     flash[:bad] = @bad
     flash[:good] = @good 
     redirect_to '/contacts/list'
+
+		rescue
+			redirect_to '/server_error'
+		end
 
   end
 
