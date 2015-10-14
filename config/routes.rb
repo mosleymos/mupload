@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
+
   root 'contacts#index'
   get 'upload' => 'contacts#upload'
   post 'upload' => 'contacts#upload'
   get 'contacts/list' => 'contacts#list'
+	
+	# Gestion des erreurs
+  get 'not_found' => 'errors#not_found'
+  get 'server_error' => 'errors#server_error'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
