@@ -83,3 +83,6 @@ gem 'dotenv-rails'
 
 # Brakeman for security
 gem 'brakeman'
+
+# Rails twelve factor
+gem 'rails_12factor'
