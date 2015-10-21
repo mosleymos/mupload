@@ -28,6 +28,19 @@ describe 'Test expect good list from excel file' do
     expect(page).to have_text('p.durant@gmail.com')
   end
 end
+describe 'Test expect treat UTF-8 excel file' do
+  feature 'Test we should see a list of good contacts'
+  scenario 'Should see a list of clean contacts' do
+    visit '/'
+    attach_file('contacts', "#{Rails.root + 'contacter.xlsx'}")
+    click_button('Envoi')
+    expect(page).to have_text('Chloé')
+    expect(page).to have_text('Prevôt')
+    expect(page).to have_text('Cdric')
+    expect(page).to have_text('Robert')
+  end
+end
+
 describe 'Test expect a list with no repeated contacts' do
   feature 'Test we should see a list unique contacts'
   scenario 'Should see a list of unique contacts' do
