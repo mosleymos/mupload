@@ -14,7 +14,7 @@ module Treat
     end
 
     def correct_contact
-      regex = /[^a-zA-Z\d\s:]/
+      regex = /[^a-zA-Zïëöéèàîôç\d\s:]/
       @firstname = @firstname.gsub(regex, '').capitalize
       @lastname = @lastname.gsub(regex, '').capitalize
       return self
@@ -28,5 +28,4 @@ module Treat
       identity_valid? && email_valid? ? @status = true : @status = false
     end
   end
-
 end
