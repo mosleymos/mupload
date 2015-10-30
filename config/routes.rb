@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+	
+  root 'static#index'
+  get 'about' => 'static#about'
 
-  root 'contacts#index'
+  get 'contacts/upload' => 'contacts#index'
   get 'upload' => 'contacts#upload'
   post 'upload' => 'contacts#upload'
   get 'contacts/list' => 'contacts#list'
