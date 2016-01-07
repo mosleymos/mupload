@@ -64,6 +64,9 @@ group :development, :test do
   # Policy my ruby
   gem 'rubocop'
 
+  # Policy my commits
+  gem 'overcommit'
+
   # Capybara
   gem 'capybara'
 
@@ -86,3 +89,6 @@ gem 'brakeman'
 
 # Rails twelve factor
 gem 'rails_12factor'
+
+# Inform my api
+gem 'swagger-docs'
