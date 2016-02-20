@@ -22,7 +22,9 @@ module Mupload
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-		# Auto load path
-		config.autoload_paths += Dir["#{Rails.root}/lib/contacts"]
+    #  Auto load path
+    config.autoload_paths += Dir["#{Rails.root}/lib/contacts"]
+
+    config.exceptions_app = self.routes
   end
 end
