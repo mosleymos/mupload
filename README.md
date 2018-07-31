@@ -16,7 +16,3 @@ Simple application to transform a csv contact file to views
 * Ruby version : 2.1.4
 
 * Rails version: 4.2.0
-
-* [Site](http://mupload.herokuapp.com)
-
-For any information don't hesitate to write an issue
